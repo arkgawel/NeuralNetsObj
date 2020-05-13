@@ -1,13 +1,7 @@
-#import numpy as np
-#import pandas as pd
-#from sklearn import preprocessing
-#from sklearn.model_selection import train_test_split
-#from sklearn.utils import shuffle
-#from sklearn.metrics import confusion_matrix
-#from keras.models import Sequential
-#from keras.layers import Dense
 
-from Preprocessing.DataLoader import DataLoader, Preprocess, Analize
+from Preprocessing.DataLoader import DataLoader
+from Preprocessing.Preprocess import Preprocess
+from Preprocessing.Analize_and_Evaluate import Analize
 
 data_loader1 = DataLoader('./forestfires.csv', ';', ',')
 file = data_loader1.read_file()
