@@ -9,7 +9,7 @@ class DataLoader:
 
 
     def read_file(self):
-        loaded = pd.read_csv(self.path, sep=self.separator, decimal=self.decimal)
+        loaded = pd.read_csv(self.path, sep=self.separator, decimal=self.decimal, engine='python')
         loaded = shuffle(loaded)
         return loaded.dropna(axis=0, how='any')
 

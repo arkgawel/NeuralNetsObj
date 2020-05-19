@@ -21,4 +21,4 @@ class Analize:
         labels = np.unique(y_test)
         a = confusion_matrix(y_test, predictions, labels=labels)
         result = pd.DataFrame(a, index=labels, columns=labels)
-        return print(result, evo)
+        return (result, evo)
