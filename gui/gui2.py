@@ -39,7 +39,7 @@ class Ui_MainWindow(object):
 
 
         self.textDefX = QtWidgets.QTextEdit(self.centralwidget)
-        self.textDefX.setGeometry(QtCore.QRect(60, 170, 111, 31))
+        self.textDefX.setGeometry(QtCore.QRect(60, 170, 211, 31))
         self.textDefX.setObjectName("textDefX")
 
 
@@ -111,15 +111,15 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        MainWindow.setWindowTitle(_translate("Prediction model", "Prediction model"))
         self.pushNNet.setText(_translate("MainWindow", "Build NNet"))
         
         self.pushButTest.setText(_translate("MainWindow", "Test Net"))
-        self.labelPath.setText(_translate("MainWindow", "Define path: [C:/.csv] "))
+        self.labelPath.setText(_translate("MainWindow", "Define path: C:/.csv "))
         self.labelSep.setText(_translate("MainWindow", "Sep"))
         self.labelDec.setText(_translate("MainWindow", "Dec"))
-        self.labelDefX.setText(_translate("MainWindow", "Define var X: [a, b]"))
-        self.labelDefY.setText(_translate("MainWindow", "Define Y: [a]"))
+        self.labelDefX.setText(_translate("MainWindow", "Define var X: a, b"))
+        self.labelDefY.setText(_translate("MainWindow", "Define Y: a"))
         self.label.setText(_translate("MainWindow", "Result"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.actionClose.setText(_translate("MainWindow", "Close"))
